@@ -3,24 +3,26 @@
   <link rel="stylesheet" href="index.css" />
   <head>
     <meta charset="utf-8" />
-    <!-- <meta name="viewport" content="width=device-width" /> -->
+    <meta name="viewport" content="width=device-width" />
     <title>Enkelt recept på pannkakor</title>
   </head>
   <body>
     <div class="content">
-      <img src="images/header-pancake.jpg" class="top-banner" alt="Pannkaka med gjortgubbar" />
-      <header>
-        <h1>Enkelt recept på pannkakor</h1>
-        <p>
+      <div class="top-banner">
+        <img src="images/header-pancake.jpg" alt="Pannkaka med gjortgubbar" />
+      </div>
+      <header class="header">
+        <h1 class="title">Enkelt recept på pannkakor</h1>
+        <p class="summary">
           Gör traditionella tunna pannkakor med detta enkla och goda
           pannkaksrecept.
         </p>
       </header>
       <main>
         <article aria-labelledby="ingr-title">
-          <h2 id="ingr-title">Ingredienser</h2>
+          <h2 id="ingr-title" class="article-heading">Ingredienser</h2>
           <span>För 4 portioner</span>
-          <ul>
+          <ul role="list">
             <li>2 1/2 dl vetemjöl</li>
             <li>1/2 tsk salt</li>
             <li>6 dl mjölk</li>
@@ -30,8 +32,8 @@
           </ul>
         </article>
         <article aria-labelledby="instr-title">
-          <h2 id="instr-title">Så här gör du</h2>
-          <ol>
+          <h2 id="instr-title" class="article-heading">Så här gör du</h2>
+          <ol role="list">
             <li>Blanda mjöl och salt i en burke.</li>
             <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
             <li>Vispa i resten av mjölken och äggen.</li>
@@ -44,11 +46,14 @@
           </ol>
         </article>
       </main>
-      <footer>
-        <h2>Severingsförslag</h2>
+      <footer class="bottom_banner">
+        <h2 class="title">Severingsförslag</h2>
         <div class="content" id="footer-imgs">
           <img src="images/footer-pancake-1.jpg" alt="Exempel på pannkaka" />
-          <img src="images/footer-pancake-2.jpg" alt="Andra exempel på pannkakor med lite extra frunkter"/>
+          <img
+            src="images/footer-pancake-2.jpg"
+            alt="Andra exempel på pannkakor med lite extra frunkter"
+          />
         </div>
       </footer>
     </div>

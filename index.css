@@ -50,22 +50,73 @@ body {
   min-height: 100vh;
 }
 
-/*Custom Classes*/
+body *:not(img, .top-banner) {
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+article {
+  background-color: red;
+}
+
+body ul[role="list"],
+body ol[role="list"] {
+  margin: inherit;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: red;
+}
+
+.article-heading {
+  font-size: 1.5rem;
+}
+
+.summary {
+  background-color: gray;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
 .content {
   background: #fcfcfc;
   border-radius: 1ch;
 }
 
 .top-banner {
+  width: auto;
+  height: 30rem;
+}
+
+.top-banner img {
+  border-top-left-radius: 1ch;
+  border-top-right-radius: 1ch;
+
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  width: 1280px;
-  height: 500px;
+}
 
-  max-width: 1280px;
-  max-height: 500px;
+.bottom_banner {
+  margin-top: 1rem;
+}
 
-  border: 1px;
-  border-color: #fcfcfc;
+.bottom_banner .title {
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.bottom_banner .content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+}
+
+.bottom_banner img {
+  object-fit: cover;
+  width: 50rem;
+  height: 30rem;
+  margin-bottom: 1.5rem;
 }
 
 /* li {
