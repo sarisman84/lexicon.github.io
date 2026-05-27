@@ -157,8 +157,8 @@ video {
   --ls-indentation: 1.1rem;
 
   /* Content */
-  --content-max-width: 50rem;
-  --content-flex-grow: calc(100rem / var(var(--content-max-width)));
+  --content-max-width: 60rem;
+  --content-flex-grow: 1;
   --content-padding: 0 1rem;
   --content-preview-height: 15rem;
 

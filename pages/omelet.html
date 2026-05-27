@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-US">
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="../styles/recipe-style.css" />
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -10,58 +10,90 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <title>Enkelt recept på pannkakor</title>
+    <title>Enkelt recept på omellet</title>
   </head>
   <body>
-    <div class="content">
-      <div class="top-banner">
-        <img src="../assets/images/header-pancake.jpg" alt="Pannkaka med gjortgubbar" />
+    <header aria-labelledby="page-logo">
+      <nav aria-label="Navigation Bar" class="top-bar">
+        <span id="page-logo" class="top-bar__logo">Recept-lexicon</span>
+        <ul role="list" class="top-bar__navigation">
+          <li><a href="#">Alla Recept</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Om Sidan</a></li>
+        </ul>
+        <div class="top-bar__login">
+          <a href="#" class="u-button">Logga In</a>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="content">
+        <div class="content-banner">
+          <img
+            src="assets/images/header-pancake.jpg"
+            alt="Pannkaka med gjortgubbar"
+          />
+        </div>
+        <main>
+          <header aria-labelledby="page-title">
+            <h1 id="page-title" class="content-heading">
+              Enkelt recept på pannkakor
+            </h1>
+            <p class="content-summary">
+              Gör <strong>traditionella tunna pannkakor</strong> med detta enkla
+              och goda pannkaksrecept.
+            </p>
+          </header>
+          <section aria-labelledby="ingr-title" class="content-section">
+            <h2 id="ingr-title" class="content-section__heading">
+              Ingredienser
+            </h2>
+            <span>För 4 portioner</span>
+            <ul role="list">
+              <li>2 1/2 dl vetemjöl</li>
+              <li>1/2 tsk salt</li>
+              <li>6 dl mjölk</li>
+              <li>3 ägg</li>
+              <li>smör (till stekning)</li>
+              <li>sylt, bär eller frukt till severing</li>
+            </ul>
+          </section>
+          <section aria-labelledby="instr-title" class="content-section">
+            <h2 id="instr-title" class="content-section__heading">
+              Så här gör du
+            </h2>
+            <ol role="list">
+              <li>Blanda mjöl och salt i en burke.</li>
+              <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+              <li>Vispa i resten av mjölken och äggen.</li>
+              <li>Låt smeten vila ca 10 minuter.</li>
+              <li>
+                Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
+                eller pannkakspanna.
+              </li>
+              <li>Servera ned sylt, bär eller frukt</li>
+            </ol>
+          </section>
+          <section
+            aria-labelledby="example-ttle"
+            class="content-section--examples"
+          >
+            <h2 id="example-ttle" class="content-section__heading">
+              Severingsförslag
+            </h2>
+            <div class="content-section__collection" id="footer-imgs">
+              <img
+                src="assets/images/footer-pancake-1.jpg"
+                alt="Exempel på pannkaka"
+              />
+              <img
+                src="assets/images/footer-pancake-2.jpg"
+                alt="Andra exempel på pannkakor med lite extra frunkter"
+              />
+            </div>
+          </section>
+        </main>
       </div>
-      <header class="page-header">
-        <h1 class="heading">Enkelt recept på pannkakor</h1>
-        <p class="summary">
-          Gör traditionella tunna pannkakor med detta enkla och goda
-          pannkaksrecept.
-        </p>
-      </header>
-      <main>
-        <section aria-labelledby="ingr-title" class="page-topic">
-          <h2 id="ingr-title" class="heading">Ingredienser</h2>
-          <span>För 4 portioner</span>
-          <ul role="list">
-            <li>2 1/2 dl vetemjöl</li>
-            <li>1/2 tsk salt</li>
-            <li>6 dl mjölk</li>
-            <li>3 ägg</li>
-            <li>smör (till stekning)</li>
-            <li>sylt, bär eller frukt till severing</li>
-          </ul>
-        </section>
-        <section aria-labelledby="instr-title" class="page-topic">
-          <h2 id="instr-title" class="heading">Så här gör du</h2>
-          <ol role="list">
-            <li>Blanda mjöl och salt i en burke.</li>
-            <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-            <li>Vispa i resten av mjölken och äggen.</li>
-            <li>Låt smeten vila ca 10 minuter.</li>
-            <li>
-              Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
-              eller pannkakspanna.
-            </li>
-            <li>Servera ned sylt, bär eller frukt</li>
-          </ol>
-        </section>
-        <section aria-labelledby="example-ttle" class="page-footer">
-          <h2 id="example-ttle" class="heading">Severingsförslag</h2>
-          <div class="examples" id="footer-imgs">
-            <img src="assets/images/footer-pancake-1.jpg" alt="Exempel på pannkaka" />
-            <img
-              src="assets/images/footer-pancake-2.jpg"
-              alt="Andra exempel på pannkakor med lite extra frunkter"
-            />
-          </div>
-        </section>
-      </main>
     </div>
   </body>
 </html>
