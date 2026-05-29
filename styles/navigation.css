@@ -39,6 +39,14 @@
   font-size: var(--fs-link);
 }
 
+.top-bar a:hover {
+  color: var(--clr-f-tp);
+}
+
+.top-bar a:focus {
+  color: var(--primary-300);
+}
+
 .top-bar__logo {
   font-weight: var(--fw-bolder);
   font-size: var(--fs-subheading);

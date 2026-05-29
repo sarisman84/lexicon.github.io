@@ -29,20 +29,29 @@
   /* Font Sizes */
   --fs-heading: 3rem;
   --fs-subheading: 2rem;
+  --fs-summary: 1.6rem;
   --fs-link: 1.4rem;
 
   /* Text Line Heights */
   --lh-heading: 2.2rem;
   --lh-default: 1.6rem;
 
+  /* Lists */
+  --ls-indentation: 1.1rem;
+
   /* Font Colors */
   --clr-f-heading: var(--accent-500);
   --clr-f-strong: var(--accent-900);
-  --clr-f-link: var(--accent-500);
+  --clr-f-link: var(--accent-700);
+  --clr-f-link--hovered: var(--accent-800);
+  --clr-f-link--focused: var(--accent-900);
   --clr-f-button: var(--primary-900);
-  --clr-f-button--focused: var(--accent-500);
+  --clr-f-button--hovered: var(--text-50);
+  --clr-f-button--focused: var(--text-50);
   --clr-f-tp: var(--text-50);
 
-  /* Lists */
-  --ls-indentation: 1.1rem;
+  /* Background Colors */
+  --clr-bg-button: var(--background-300);
+  --clr-bg-button--hovered: var(--background-500);
+  --clr-bg-button--focused: var(--background-700);
 }
